@@ -6,7 +6,7 @@ import gradio as gr
 import cv2
 from ultralytics import YOLO
 
-model = YOLO("best.pt")
+model = YOLO("best.onnx")
 
 def predict_image(img):
     if img is None:
